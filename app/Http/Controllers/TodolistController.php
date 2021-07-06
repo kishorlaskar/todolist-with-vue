@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Todolist;
 use Illuminate\Http\Request;
 
 class TodolistController extends Controller
@@ -13,18 +14,10 @@ class TodolistController extends Controller
      */
     public function index()
     {
-        //
+        return view('todolist.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -34,7 +27,8 @@ class TodolistController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newItem = new Todolist();
+
     }
 
     /**
